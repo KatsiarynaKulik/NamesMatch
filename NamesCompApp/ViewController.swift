@@ -11,7 +11,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var yourNameTF: UITextField!
     @IBOutlet weak var partenNameTF: UITextField!
-        
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? ResultViewController else { return }
         destinationVC.firstName = yourNameTF.text
@@ -53,13 +53,13 @@ extension FirstViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    if textField == yourNameTF {
-        partenNameTF.becomeFirstResponder()
-    } else {
-        resultButtonTapped ()
-    }
-    return true
+        if textField == yourNameTF {
+            partenNameTF.becomeFirstResponder()
+        } else {
+            resultButtonTapped ()
+        }
+        return true
     }
 }
-    
+
 
