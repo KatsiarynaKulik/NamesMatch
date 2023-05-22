@@ -99,6 +99,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Katsiaryna Kulik";
 				TargetAttributes = {
 					C4406C4E29A62C780051F463 = {
 						CreatedOnToolsVersion = 14.2;
